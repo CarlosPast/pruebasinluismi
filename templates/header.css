@@ -1,0 +1,13 @@
+header{
+display: flex;
+flex-direction: row;
+}
+.lista{display: flex;
+    flex-direction: row;
+}
+.lista>li{
+background-color: #97BCD9;
+    margin:10px 30px 10px 30px;
+    width: 70px;
+    height: 40px;
+}

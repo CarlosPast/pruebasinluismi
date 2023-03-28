@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ListaPrueba</title>
+</head>
+<body>
+    <header>
+        <div class="lista"><li><a href="/djiangodeprueba">Inicio</a></li><li><a href="/djiangodeprueba/prueba">Prueba</a></li><li></li> </div>
+    </header>
+    {% for pr in prueba %}
+        <h2>{{ pr.nombre }}</h2>
+        <h2>{{ pr.apellidos }}</h2>
+        {% for prt in pr.pruebita_set.all %}
+         <h3>{{ prt.amount }}</h3>
+        {% endfor %}
+    {% endfor %}
+    {% for al in prueba_algodon %}
+        <h2>{{ al.nombre }}</h2>
+    {% endfor %}
+    
+</body>
+</html>
