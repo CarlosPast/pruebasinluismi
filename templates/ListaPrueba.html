@@ -8,6 +8,13 @@
     <header>
         <div class="lista"><li><a href="/djiangodeprueba">Inicio</a></li><li><a href="/djiangodeprueba/prueba">Prueba</a></li><li></li> </div>
     </header>
+    <div class="fu" >
+        <form  method="POST">
+        {% csrf_token %}
+        <input id="name" name="name" type="text" value="">
+    <input id="pass" name="pass" type="text" value="">
+            <button type="submit" >ok</button>
+    </form></div>
     {% for pr in prueba %}
         <h2>{{ pr.nombre }}</h2>
         <h2>{{ pr.apellidos }}</h2>
